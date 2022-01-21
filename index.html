@@ -11,7 +11,7 @@
 <header class="page-header">
   <form class="search-form" name="search-form" method="post" action="https://echo.htmlacademy.ru/">
     <label class="search-label" for="search-input">Поиск</label>
-    <input class="search-input" type="text" name="search-input" id="search-input" value="Текст поиска">
+    <input class="search-input" type="search" name="search-input" id="search-input" value="Поиск по сайту">
     <button type="submit">Найти</button>
   </form>
   <nav class="navigation">
@@ -26,21 +26,26 @@
         <a class="navigation-user-link" href="#">Корзина</a>
       </li>
     </ul>
-    <ul class="navigation-shop-list">
-      <li class="navigation-shop-item">
-        <a href="#" class="navigation-shop-link">Каталог товаров</a>
+    <div class="navigation-catalog">
+      <button class="navigation-catalog-button" type="button" name="navigation-catalog-button">Каталог товаров</button>
+        <ul class="navigation-catalog-list"> <!--Список скрывается/отображается по клику кнопки-->
+          <li class="navigation-catalog-item"><a href="#" class="navigation-catalog-link">Виртуальная реальность</a></li>
+          <li class="navigation-catalog-item"><a href="#" class="navigation-catalog-link">Моноподы для cелфи</a></li>
+          <li class="navigation-catalog-item"><a href="#" class="navigation-catalog-link">Экшн-камеры</a></li>
+          <li class="navigation-catalog-item"><a href="#" class="navigation-catalog-link">Фитнес-браслеты</a></li>
+          <li class="navigation-catalog-item"><a href="#" class="navigation-catalog-link">Умные часы</a></li>
+          <li class="navigation-catalog-item"><a href="#" class="navigation-catalog-link">Квадрокоптеры</a></li>
+        </ul>
+    </div>
+    <ul class="navigation-info-list">
+        <li class="navigation-info-item">
+        <a href="#" class="navigation-info-link">Доставка</a>
       </li>
-      <li class="navigation-shop-item">
-        <a href="#" class="navigation-shop-link">Меню каталога товаров</a>
+      <li class="navigation-info-item">
+        <a href="#" class="navigation-info-link">Гарантия</a>
       </li>
-      <li class="navigation-shop-item">
-        <a href="#" class="navigation-shop-link">Доставка</a>
-      </li>
-      <li class="navigation-shop-item">
-        <a href="#" class="navigation-shop-link">Гарантия</a>
-      </li>
-      <li class="navigation-shop-item">
-        <a href="#" class="navigation-shop-link">Контакты</a>
+      <li class="navigation-info-item">
+        <a href="#" class="navigation-info-link">Контакты</a>
       </li>
     </ul>
   </nav>
