@@ -6,12 +6,13 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
 <header class="page-header">
+    <img class="logo" src="" alt="Логотип магазина «Девайс»." > <!-- подгрузить логотип -->
   <form class="search-form" name="search-form" method="post" action="https://echo.htmlacademy.ru/">
-    <label class="search-label" for="search-input">Поиск</label>
-    <input class="search-input" type="search" name="search-input" id="search-input" value="Поиск по сайту">
+    <label class="search-label" for="search-input">
+      <span class="visually-hidden">Поиск по сайту</span>
+    </label>
+    <input class="search-input" type="search" name="search-input" id="search-input" placeholder="Поиск по сайту">
     <button type="submit">Найти</button>
   </form>
   <nav class="navigation">
@@ -29,12 +30,24 @@
     <div class="navigation-catalog">
       <button class="navigation-catalog-button" type="button" name="navigation-catalog-button">Каталог товаров</button>
         <ul class="navigation-catalog-list"> <!--Список скрывается/отображается по клику кнопки-->
-          <li class="navigation-catalog-item"><a href="#" class="navigation-catalog-link">Виртуальная реальность</a></li>
-          <li class="navigation-catalog-item"><a href="#" class="navigation-catalog-link">Моноподы для cелфи</a></li>
-          <li class="navigation-catalog-item"><a href="#" class="navigation-catalog-link">Экшн-камеры</a></li>
-          <li class="navigation-catalog-item"><a href="#" class="navigation-catalog-link">Фитнес-браслеты</a></li>
-          <li class="navigation-catalog-item"><a href="#" class="navigation-catalog-link">Умные часы</a></li>
-          <li class="navigation-catalog-item"><a href="#" class="navigation-catalog-link">Квадрокоптеры</a></li>
+          <li class="navigation-catalog-item">
+            <a href="#" class="navigation-catalog-link">Виртуальная реальность</a>
+          </li>
+          <li class="navigation-catalog-item">
+            <a href="#" class="navigation-catalog-link">Моноподы для cелфи</a>
+          </li>
+          <li class="navigation-catalog-item">
+            <a href="#" class="navigation-catalog-link">Экшн-камеры</a>
+          </li>
+          <li class="navigation-catalog-item">
+            <a href="#" class="navigation-catalog-link">Фитнес-браслеты</a>
+          </li>
+          <li class="navigation-catalog-item">
+            <a href="#" class="navigation-catalog-link">Умные часы</a>
+          </li>
+          <li class="navigation-catalog-item">
+            <a href="#" class="navigation-catalog-link">Квадрокоптеры</a>
+          </li>
         </ul>
     </div>
     <ul class="navigation-info-list">
@@ -51,6 +64,63 @@
   </nav>
 </header>
 
+<main class="main-index">
+  <h1 class="visually-hidden">Магазин электроники «Девайс»</h1>
+  <section class="main-catalog">
+    <h2 class="visually-hidden">Каталог товаров</h2>
+    <ul class="main-catalog-list">
+      <li class="main-catalog-item">
+        <a class="main-catalog-link" href="#">Виртуальная
+          реальность</a>
+      </li>
+      <li class="main-catalog-item">
+        <a class="main-catalog-link" href="#">Моноподы 
+        для селфи</a>
+      </li>
+      <li class="main-catalog-item">
+        <a class="main-catalog-link" href="#">Экшн-камеры</a>
+      </li>
+      <li class="main-catalog-item">
+        <a class="main-catalog-link" href="#">Фитнес-браслеты</a>
+      </li>
+      <li class="main-catalog-item">
+        <a class="main-catalog-link" href="#">Умные часы</a>
+      </li>
+      <li class="main-catalog-item">
+        <a class="main-catalog-link" href="#">Квадрокоптеры</a>
+      </li>
+    </ul>
+  </section>
+  <section class="main-info">
+    <h2 class="visually-hidden">О нас</h2>
+    <ul class="main-info-list">
+      <li class="main-info-item info-item-selected">
+        <a class="main-info-link" href="#">Доставка</a>
+        <h3 class="main-info-title">Доставка</h3>
+        <p class="main-info-description">Мы с удовольствием доставим ваш товар прямо
+          к вашему подъезду совершенно бесплатно! Ведь
+          мы неплохо заработаем, поднимая его на ваш этаж.</p>
+      </li>
+      <li class="main-info-item">
+        <a class="main-info-link" href="#">Гарантия</a>
+        <h3 class="main-info-title">Гарантия</h3>
+        <p class="main-info-description">Если из-за возгорания купленного у нас товара у вас
+          сгорит дом — не переживайте, мы выдадим вам новый.
+          Товар, не дом, конечно же.</p>
+      </li>
+      <li class="main-info-item">
+        <a class="main-info-link" href="#">Кредит</a>
+        <h3 class="main-info-title">Кредит</h3>
+        <p class="main-info-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+          наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+      </li>
+    </ul>
+  </section>
+<section class="delivery">
+  <h2 class="delivery-title">Доставка под заказ</h2>
+  <a class="delivery-link" href="#">Доставим редкий товар под заказ</a>
+</section>
+</main>
 
   </body>
 </html>
