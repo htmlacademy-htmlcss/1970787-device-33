@@ -88,14 +88,61 @@
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
+            <!--Не размечаем, разметка этого блока в 8м лайве-->
           </fieldset>
   
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цвет</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="filter-control">
+                  <input class="filter-input" type="checkbox" name="black" checked>
+                  Черный                 
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="filter-control">
+                  <input class="filter-input" type="checkbox" name="white" checked>
+                  Белый
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="filter-control">
+                  <input class="filter-input" type="checkbox" name="blue">
+                  Синий
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="filter-control">
+                  <input class="filter-input" type="checkbox" name="red">
+                  Красный
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="filter-control">
+                  <input class="filter-input" type="checkbox" name="pink">
+                  Розовый
+                </label>
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Bluetooth</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="filter-control">
+                  <input class="filter-input" type="radio" name="bluetooth" value="yes" checked>
+                  Есть                 
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="filter-control">
+                  <input class="filter-input" type="radio" name="bluetooth" value="no">
+                  Нет
+                </label>
+              </li>
+            </ul>
           </fieldset>
   
           <button class="button" type="submit">Показать</button>
