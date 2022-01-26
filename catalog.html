@@ -84,6 +84,7 @@
 
       <section class="catalog-products">
         <h2 class="visually-hidden">Каталог товаров с фильтрами</h2>
+        <p class="filter-text">фильтр:</p>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
           <fieldset class="catalog-filter-group">
@@ -147,6 +148,18 @@
   
           <button class="button" type="submit">Показать</button>
         </form>
+        <p class="filter-text">сортировка:</p>
+        <select class="select-control">
+          <option value="popular">Популярные</option>
+          <option value="cheap">Дешёвые</option>
+          <option value="expensive">Дорогие</option>
+        </select>
+        <a class="catalog-button-up" href="#">
+          <span class="visually-hidden">От меньшего к большему</span>
+        </a>
+        <a class="catalog-button-down" href="#">
+          <span class="visually-hidden">От большего к меньшему</span>
+        </a>
       </section>
     </main>
 
