@@ -7,7 +7,7 @@
   <body>
 
     <header class="page-header">
-      <a class="logo-link" href="#">
+      <a class="logo-link" href="index.html">
         <img class="header-logo" src="#" alt="Логотип магазина «Девайс»." > <!-- подгрузить логотип -->
       </a>
       <form class="search-form" name="search-form" method="post" action="https://echo.htmlacademy.ru/">
@@ -36,7 +36,7 @@
                 <a href="#" class="navigation-catalog-link">Виртуальная реальность</a>
               </li>
               <li class="navigation-catalog-item">
-                <a href="#" class="navigation-catalog-link">Моноподы для cелфи</a>
+                <a href="#" class="navigation-catalog-link navigation-catalog-link-current">Моноподы для cелфи</a>
               </li>
               <li class="navigation-catalog-item">
                 <a href="#" class="navigation-catalog-link">Экшн-камеры</a>
@@ -66,8 +66,41 @@
       </nav>
     </header>
     
-    <main>
+    <main class="main-inner">
+      <header class="inner-header">
+        <h1 class="inner-header-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </header>
 
+      <section class="catalog-products">
+        <h2 class="visually-hidden">Каталог товаров с фильтрами</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Стоимость</legend>
+          </fieldset>
+  
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Цвет</legend>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Bluetooth</legend>
+          </fieldset>
+  
+          <button class="button" type="submit">Показать</button>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
