@@ -16,7 +16,7 @@
           <span class="visually-hidden">Поиск по сайту</span>
         </label>
         <input class="search-input" type="search" name="search-input" id="search-input" placeholder="Поиск по сайту">
-        <button type="submit">Найти</button>
+        <button class="search-button" type="submit">Найти</button>
       </form>
       <nav class="navigation">
         <ul class="navigation-user-list">
@@ -150,7 +150,7 @@
             </ul>
           </fieldset>
 
-          <button class="button" type="submit">Показать</button>
+          <button class="button catalog-filter-button" type="submit">Показать</button>
         </form>
         <p class="filter-text">сортировка:</p>
         <select class="select-control">
@@ -164,66 +164,67 @@
         <a class="catalog-button-down" href="#">
           <span class="visually-hidden">От большего к меньшему</span>
         </a>
+        <div class="catalog">
+          <ul class="product-card-list">
+            <li class="product-card">
+              <a class="product-card-link" href="#">
+                <img class="product-card-image new-product-mark" src="images/catalog/catalog-1.jpg" width="360" height="380" alt="Любительская селфи-палка"> <!-- Добавлен класс "new-product-mark" на макете нет,чтобы при необходимости отметить новый товар-->
+                <h3 class="product-card-title">Любительская селфи-палка</h3>
+              </a>
+              <b class="product-card-price">500 ₽</b>
+              <a class="button product-card-button" href="#">Подробнее</a> <!--Появляется при наведении-->
+            </li>
+            <li class="product-card">
+              <a class="product-card-link" href="#">
+                <img class="product-card-image" src="images/catalog/catalog-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+              </a>
+              <b class="product-card-price">1 500 ₽</b>
+              <a class="button product-card-button" href="#">Подробнее</a>
+            </li>
+            <li class="product-card">
+              <a class="product-card-link" href="#">
+                <img class="product-card-image" src="images/catalog/catalog-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+              </a>
+              <b class="product-card-price">2 500 ₽</b>
+              <a class="button product-card-button" href="#">Подробнее</a>
+            </li>
+            <li class="product-card">
+              <a class="product-card-link" href="#">
+                <img class="product-card-image" src="images/catalog/catalog-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+              </a>
+              <b class="product-card-price">1 500 ₽</b>
+              <a class="button product-card-button" href="#">Подробнее</a>
+            </li>
+          </ul>
 
-        <ul class="product-card-list">
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image new-product-mark" src="images/catalog/catalog-1.jpg" width="360" height="380" alt="Любительская селфи-палка"> <!-- Добавлен класс "new-product-mark" на макете нет,чтобы при необходимости отметить новый товар-->
-              <h3 class="product-card-title">Любительская селфи-палка</h3>
-            </a>
-            <b class="product-card-price">500 ₽</b>
-            <a class="button product-card-hover" href="#">Подробнее</a> <!--Появляется при наведении-->
-          </li>
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/catalog/catalog-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-              <h3 class="product-card-title">Профессиональная селфи-палка</h3>
-            </a>
-            <b class="product-card-price">1 500 ₽</b>
-            <a class="button product-card-hover" href="#">Подробнее</a>
-          </li>
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/catalog/catalog-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-              <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
-            </a>
-            <b class="product-card-price">2 500 ₽</b>
-            <a class="button product-card-hover" href="#">Подробнее</a>
-          </li>
-          <li class="product-card">
-            <a class="product-card-link" href="#">
-              <img class="product-card-image" src="images/catalog/catalog-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-              <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
-            </a>
-            <b class="product-card-price">1 500 ₽</b>
-            <a class="button product-card-hover" href="#">Подробнее</a>
-          </li>
-        </ul>
-
-        <button class="pagination-load-more" type="button">Загрузить ещЁ</button>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-prev" href="#">Назад</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">15</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">Вперёд</a>
-          </li>
-        </ul>
+          <button class="pagination-load-more" type="button">Загрузить ещЁ</button>
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">Назад</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-page-number pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-page-number" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-page-number" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-page-number" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-page-number" href="#">15</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">Вперёд</a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
