@@ -57,6 +57,10 @@ body {
   width: 160px;
 }
 
+.navigation-user-list {
+  list-style: none;
+}
+
 .navigation-user-link {
   color: inherit;
   text-decoration: none;
@@ -73,11 +77,19 @@ body {
   letter-spacing: 0.2em;
 }
 
+.navigation-catalog-list {
+  list-style: none;
+}
+
 .navigation-catalog-link {
   color: inherit;
   text-decoration: none;
   font-size: 16px;
   line-height: 18px;
+}
+
+.navigation-advantages-list {
+  list-style: none;
 }
 
 .navigation-advantages-link {
@@ -89,6 +101,10 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+}
+
+.slider-cards {
+  list-style: none;
 }
 
 .slider-title {
@@ -143,6 +159,10 @@ body {
 .slider-property {
   font-size: 16px;
   color: #444444;
+}
+
+.main-catalog-list {
+  list-style: none;
 }
 
 .main-catalog-link {
@@ -209,6 +229,10 @@ body {
   text-transform: uppercase;
 }
 
+.main-advantages-list {
+  list-style: none;
+}
+
 .main-advantages-title {
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -226,7 +250,6 @@ body {
   min-height: max-content;
   position: relative;
   overflow: hidden;
-  z-index: -2;
 }
 
 .main-advantages::after {
@@ -237,4 +260,50 @@ body {
   top: 102px;
   position: absolute;
   z-index: -1;
+}
+
+.delivery-link {
+  font-family: Raleway, sans-serif;
+  color: #000000;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  text-align: center;
+  background-color: #f0f0f0;
+  display: block;
+  min-width: 820px;
+  max-width: 1160px;
+  height: 100px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.delivery-link::before {
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 100px;
+  left: 0;
+  background-color: #FFE17F;
+  background-image: url(/images/delivery-link.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.delivery-link::after {
+  content: "i";
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 43px;
+  top: 30px;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(220, 220, 220, 0.5);
+  border-radius: 50%;
 }
