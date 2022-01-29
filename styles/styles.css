@@ -34,11 +34,27 @@ body {
   color: #000000;
 }
 
+/* Для скрытия элементов */
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
+/* Хедер */
 .page-header {
   background-color: #ffe17f;
   color: #000000;
 }
 
+/* Поиск в хедере */
 .search-input {
   background-color: inherit;
   color: inherit;
@@ -57,6 +73,7 @@ body {
   width: 160px;
 }
 
+/* Кнопки пользователя */
 .navigation-user-list {
   list-style: none;
 }
@@ -66,6 +83,7 @@ body {
   text-decoration: none;
 }
 
+/* Ссылки каталога */
 .navigation-catalog-button {
   background-color: #ffe17f;
   border: none;
@@ -88,6 +106,7 @@ body {
   line-height: 18px;
 }
 
+/* Ссылки преимуществ */
 .navigation-advantages-list {
   list-style: none;
 }
@@ -103,21 +122,8 @@ body {
   letter-spacing: 0.2em;
 }
 
-.slider-cards {
-  list-style: none;
-}
-
-.slider-title {
-  font-family: Raleway, sans-serif;
-  font-weight: 800;
-  font-size: 50px;
-  line-height: 50px;
-}
-
-.slider-text {
-  color: #444444;
-}
-
+/* Мейн */
+/* Оформление ссылок-кнопок */
 .button {
   font-family: Raleway, sans-serif;
   color: #000000;
@@ -143,7 +149,22 @@ body {
   height: 8px;
   background-color: #ffe17f;
   z-index: -1;
+}
 
+/* Слайдер */
+.slider-cards {
+  list-style: none;
+}
+
+.slider-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.slider-text {
+  color: #444444;
 }
 
 .slider-link {
@@ -161,6 +182,7 @@ body {
   color: #444444;
 }
 
+/* Каталог */
 .main-catalog-list {
   list-style: none;
 }
@@ -210,6 +232,7 @@ body {
   background-image: url(/images/main-catalog-6.svg);
 }
 
+/* Преимущества */
 .main-advantages-link {
   width: 153px;
 }
@@ -262,6 +285,7 @@ body {
   z-index: -1;
 }
 
+/* Доставка */
 .delivery-link {
   font-family: Raleway, sans-serif;
   color: #000000;
@@ -308,11 +332,21 @@ body {
   border-radius: 50%;
 }
 
+/* О нас */
 .about-us-title {
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+}
+
+.about-us-title::before {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  margin-bottom: 40px;
 }
 
 .about-us-text {
@@ -338,20 +372,33 @@ body {
   width: 258px;
 }
 
+/* Контакты */
 .contacts-title {
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
 }
+
+.contacts-title::before {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  margin-bottom: 40px;
+}
+
 .contacts-text {
   color: #444444;
 }
+
 .contacts-subtitle {
   font-weight: 700;
   color: #444444;
   font-size: 24px;
 }
+
 .contacts-address {
   font-style: normal;
   color: #444444;
@@ -371,6 +418,7 @@ body {
   width: 248px;
 }
 
+/* Подписка на рассылку */
 .mailing {
   background-color: #f0f0f0;
 }
@@ -414,4 +462,74 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/* Футер */
+.page-footer {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+/* Адрес */
+.footer-address-text {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer-address-text::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 7px;
+  background-color: #FFC700;
+  margin-top: 66px;
+}
+
+/* Преимущества */
+.footer-advantages-list {
+  list-style: none;
+}
+
+.footer-advantages-link {
+  color: inherit;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* Телефон */
+.footer-phone-text {
+  color: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+}
+
+/* Социальные сети */
+.footer-social-list {
+  list-style: none;
+}
+
+.social-button {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.facebook-button {
+  background-image: url(/images/facebook.svg);
+}
+
+.instagram-button {
+  background-image: url(/images/instagram.svg);
+}
+
+.twitter-button {
+  background-image: url(/images/twitter.svg);
 }
