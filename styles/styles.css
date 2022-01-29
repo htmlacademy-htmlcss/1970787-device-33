@@ -307,3 +307,66 @@ body {
   background-color: rgba(220, 220, 220, 0.5);
   border-radius: 50%;
 }
+
+.about-us-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.about-us-text {
+  color: #444444;
+}
+
+.about-us-delivery-item {
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  margin-bottom: 19px;
+}
+
+.about-us-delivery-item:last-child {
+  margin-bottom: 40px;
+}
+
+.about-us-delivery-item::marker {
+  color:  #FFC700;
+}
+
+.about-us-link {
+  width: 258px;
+}
+
+.contacts-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+.contacts-text {
+  color: #444444;
+}
+.contacts-subtitle {
+  font-weight: 700;
+  color: #444444;
+  font-size: 24px;
+}
+.contacts-address {
+  font-style: normal;
+  color: #444444;
+}
+
+.contacts-phone {
+  color: inherit;
+}
+
+.contacts-schedule {
+  list-style: none;
+  padding: 0;
+  color: #444444;
+}
+
+.link-contact-us {
+  width: 248px;
+}
