@@ -155,6 +155,41 @@ body {
   letter-spacing: -0.02em;
 }
 
+.main-catalog-link::before {
+  content: "";
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-color: #FFE17F;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.vr-link::before {
+  background-image: url(/images/main-catalog-1.svg);
+}
+
+.monopods-link::before {
+  background-image: url(/images/main-catalog-2.svg);
+  background-position: bottom;
+}
+
+.cameras-link::before {
+  background-image: url(/images/main-catalog-3.svg);
+}
+
+.fitness-trackers-link::before {
+  background-image: url(/images/main-catalog-4.svg);
+}
+
+.smartwatch-link::before {
+  background-image: url(/images/main-catalog-5.svg);
+}
+
+.Quadrocopters-link::before {
+  background-image: url(/images/main-catalog-6.svg);
+}
+
 .main-advantages-link {
   width: 153px;
 }
