@@ -32,6 +32,7 @@ body {
   line-height: 30px;
   background-color: #ffffff;
   color: #000000;
+  margin: 0;
 }
 
 /* Для скрытия элементов */
@@ -93,10 +94,51 @@ body {
   line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+  position: relative;
+}
+
+.navigation-catalog {
+  position: relative;
+}
+
+.navigation-catalog-button::after {
+  content: "";
+  background-image: url(/images/catalog-plus.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -57px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+/* Выпадающий список без JS */
+.sub-menu-checkbox:checked ~ .navigation-catalog-list {
+  display: block;
+}
+
+.sub-menu-checkbox:checked + .navigation-catalog-button::after {
+  background-image: url(/images/catalog-minus.svg);
 }
 
 .navigation-catalog-list {
   list-style: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffe17f;
+  width: 100%;
+  height: 180px;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-catalog-link {
@@ -104,6 +146,10 @@ body {
   text-decoration: none;
   font-size: 16px;
   line-height: 18px;
+}
+
+.navigation-catalog-link-current {
+  border-bottom: 1px solid #000000;
 }
 
 /* Ссылки преимуществ */

@@ -31,27 +31,30 @@
           </li>
         </ul>
         <div class="navigation-catalog">
-          <button class="navigation-catalog-button" type="button" name="navigation-catalog-button">Каталог товаров</button>
-            <ul class="navigation-catalog-list"> <!--Список скрывается/отображается по клику кнопки-->
-              <li class="navigation-catalog-item">
-                <a href="#" class="navigation-catalog-link">Виртуальная реальность</a>
-              </li>
-              <li class="navigation-catalog-item">
-                <a href="catalog.html" class="navigation-catalog-link">Моноподы для cелфи</a>
-              </li>
-              <li class="navigation-catalog-item">
-                <a href="#" class="navigation-catalog-link">Экшн-камеры</a>
-              </li>
-              <li class="navigation-catalog-item">
-                <a href="#" class="navigation-catalog-link">Фитнес-браслеты</a>
-              </li>
-              <li class="navigation-catalog-item">
-                <a href="#" class="navigation-catalog-link">Умные часы</a>
-              </li>
-              <li class="navigation-catalog-item">
-                <a href="#" class="navigation-catalog-link">Квадрокоптеры</a>
-              </li>
-            </ul>
+          <!-- Для реализации выпадающего меню через JS использовать "button", без JS используем "label" и "input" -->
+          <!-- <button class="navigation-catalog-button" type="button" name="navigation-catalog-button">Каталог товаров</button> --> <!-- Раскомментить при реализации через JS -->
+          <input class="visually-hidden sub-menu-checkbox" type="checkbox" name="sub-menu" id="sub-menu"> <!-- Убрать при реализации через JS -->
+          <label class="navigation-catalog-button" for="sub-menu">Каталог товаров</label> <!-- Убрать при реализации через JS -->
+          <ul class="navigation-catalog-list"> <!--Список скрывается/отображается по клику кнопки-->
+            <li class="navigation-catalog-item">
+              <a href="#" class="navigation-catalog-link">Виртуальная реальность</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a href="catalog.html" class="navigation-catalog-link">Моноподы для cелфи</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a href="#" class="navigation-catalog-link">Экшн-камеры</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a href="#" class="navigation-catalog-link">Фитнес-браслеты</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a href="#" class="navigation-catalog-link">Умные часы</a>
+            </li>
+            <li class="navigation-catalog-item">
+              <a href="#" class="navigation-catalog-link">Квадрокоптеры</a>
+            </li>
+          </ul>
         </div>
         <ul class="navigation-advantages-list">
             <li class="navigation-advantages-item">
