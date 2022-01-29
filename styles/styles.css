@@ -101,6 +101,7 @@ body {
   position: relative;
 }
 
+/* иконка каталога */
 .navigation-catalog-button::after {
   content: "";
   background-image: url(/images/catalog-plus.svg);
@@ -117,6 +118,10 @@ body {
   border-radius: 50%;
   opacity: 0.3;
   z-index: 1;
+}
+
+.navigation-catalog-button:hover::after {
+  opacity: 1;
 }
 
 /* Выпадающий список без JS */
@@ -578,4 +583,29 @@ body {
 
 .twitter-button {
   background-image: url(/images/twitter.svg);
+}
+
+/* catalog.html */
+/* Заголовок */
+.inner-header-title {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+/* Хлебные крошки */
+.breadcrumbs {
+  list-style: url(/images/breadcrumbs-arrow.svg);
+}
+
+.breadcrumbs-item:first-of-type {
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
 }
