@@ -4,7 +4,7 @@
   font-family: Rubik;
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/rubik/rubik-400.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -12,7 +12,7 @@
   font-family: Rubik;
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/rubik/rubik-700.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -22,7 +22,7 @@
   font-family: Raleway;
   font-style: normal;
   font-weight: 800;
-  src: url("/fonts/raleway/raleway-800.woff2") format("woff2");
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -126,7 +126,7 @@ body {
   width: 48px;
   height: 48px;
 
-  background-image: url("/images/catalog-plus.svg");
+  background-image: url("../images/catalog-plus.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #000000;
@@ -145,7 +145,7 @@ body {
 }
 
 .sub-menu-checkbox:checked + .navigation-catalog-button::after {
-  background-image: url("/images/catalog-minus.svg");
+  background-image: url("../images/catalog-minus.svg");
 }
 
 .navigation-catalog-list {
@@ -283,28 +283,28 @@ body {
 }
 
 .vr-link::before {
-  background-image: url("/images/main-catalog-1.svg");
+  background-image: url("../images/main-catalog-1.svg");
 }
 
 .monopods-link::before {
-  background-image: url("/images/main-catalog-2.svg");
+  background-image: url("../images/main-catalog-2.svg");
   background-position: bottom;
 }
 
 .cameras-link::before {
-  background-image: url("/images/main-catalog-3.svg");
+  background-image: url("../images/main-catalog-3.svg");
 }
 
 .fitness-trackers-link::before {
-  background-image: url("/images/main-catalog-4.svg");
+  background-image: url("../images/main-catalog-4.svg");
 }
 
 .smartwatch-link::before {
-  background-image: url("/images/main-catalog-5.svg");
+  background-image: url("../images/main-catalog-5.svg");
 }
 
 .quadrocopters-link::before {
-  background-image: url("/images/main-catalog-6.svg");
+  background-image: url("../images/main-catalog-6.svg");
 }
 
 /* Преимущества */
@@ -398,7 +398,7 @@ body {
   height: 100px;
 
   background-color: #ffe17f;
-  background-image: url("/images/delivery-link.svg");
+  background-image: url("../images/delivery-link.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -564,7 +564,7 @@ body {
   width: 16px;
   height: 16px;
 
-  background-image: url("/images/mailing-its-free.svg");
+  background-image: url("../images/mailing-its-free.svg");
   transform: translateY(-50%);
 }
 
@@ -631,15 +631,15 @@ body {
 }
 
 .facebook-button {
-  background-image: url("/images/facebook.svg");
+  background-image: url("../images/facebook.svg");
 }
 
 .instagram-button {
-  background-image: url("/images/instagram.svg");
+  background-image: url("../images/instagram.svg");
 }
 
 .twitter-button {
-  background-image: url("/images/twitter.svg");
+  background-image: url("../images/twitter.svg");
 }
 
 /* catalog.html */
@@ -653,7 +653,7 @@ body {
 
 /* Хлебные крошки */
 .breadcrumbs {
-  list-style: url("/images/breadcrumbs-arrow.svg");
+  list-style: url("../images/breadcrumbs-arrow.svg");
 }
 
 .breadcrumbs-item:first-of-type {
