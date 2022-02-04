@@ -293,8 +293,26 @@ body {
 }
 
 /* Слайдер */
+.main-slider {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .slider-cards {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.slider-card {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+}
+
+.slider-text-wrapper {
+  width: 560px;
 }
 
 .slider-title {
