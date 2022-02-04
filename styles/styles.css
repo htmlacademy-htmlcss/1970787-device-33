@@ -26,7 +26,14 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   margin: 0;
 
   font-family: Rubik, sans-serif;
@@ -57,42 +64,90 @@ body {
 
 /* Хедер */
 .page-header {
+  position: relative;
+
+  width: 1160px;
+  margin: 40px auto 0px;
+
   color: #000000;
 
   background-color: #ffe17f;
 }
 
+/* Логотип хедера */
+.logo-link {
+  position: absolute;
+
+  margin-top: -23px;
+  margin-left: 60px;
+}
+
+/* Обертка строки поиска и пользовательских кнопок */
+.header-search-wrapper {
+  display: flex;
+  width: 1040px;
+  margin: 0 auto;
+}
+
 /* Поиск в хедере */
+.search-form {
+  display: flex;
+  width: 517px;
+}
+
 .search-input {
   width: 359px;
   height: 40px;
+  margin: 0;
+  padding-left: 48px;
 
   font-size: 16px;
   line-height: 20px;
   color: inherit;
 
   background-color: inherit;
+  border: 2px solid #000000;
 }
 
 .search-button {
-  width: 160px;
+  width: 158px;
   height: 40px;
+  margin: 0;
 
   font-size: 16px;
   line-height: 20px;
   color: inherit;
 
   background-color: inherit;
+  border: 2px solid #000000;
+  border-left: none;
 }
 
 /* Кнопки пользователя */
 .navigation-user-list {
+  display: flex;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.navigation-user-item:first-child {
+  margin-right: auto;
 }
 
 .navigation-user-link {
   color: inherit;
   text-decoration: none;
+}
+
+/* Каталог */
+.navigation-catalog-wrapper {
+  display: flex;
+  align-items: center;
+  width: 1040px;
+  margin: 0 auto;
 }
 
 /* Ссылки каталога */
@@ -112,6 +167,8 @@ body {
 
 .navigation-catalog {
   position: relative;
+
+  margin-right: auto;
 }
 
 /* иконка каталога */
@@ -140,6 +197,9 @@ body {
 }
 
 /* Выпадающий список без JS */
+.sub-menu-checkbox {
+  display: none;
+}
 .sub-menu-checkbox:checked ~ .navigation-catalog-list {
   display: block;
 }
@@ -151,10 +211,10 @@ body {
 .navigation-catalog-list {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -60px;
 
   display: none;
-  width: 100%;
+  width: 1160px;
   height: 180px;
   margin: 0;
   padding: 0;
@@ -177,6 +237,10 @@ body {
 
 /* Ссылки преимуществ */
 .navigation-advantages-list {
+  display: flex;
+  justify-content: space-between;
+  width: 471px;
+
   list-style: none;
 }
 
@@ -192,6 +256,10 @@ body {
 }
 
 /* Мейн */
+.main-index {
+  flex-grow: 1;
+}
+
 /* Оформление ссылок-кнопок */
 .button {
   position: relative;
