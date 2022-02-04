@@ -500,6 +500,11 @@ body {
 }
 
 /* Доставка */
+.delivery {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .delivery-link {
   position: relative;
 
@@ -555,6 +560,17 @@ body {
 }
 
 /* О нас */
+.about-us-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.about-us {
+  width: 520px;
+}
+
 .about-us-title {
   font-family: Raleway, sans-serif;
   font-size: 50px;
@@ -574,6 +590,8 @@ body {
 }
 
 .about-us-text {
+  width: 497px;
+
   color: #444444;
 }
 
@@ -598,6 +616,10 @@ body {
 }
 
 /* Контакты */
+.contacts {
+  width: 532px;
+}
+
 .contacts-title {
   font-family: Raleway, sans-serif;
   font-size: 50px;
@@ -617,6 +639,8 @@ body {
 }
 
 .contacts-text {
+  width: 496px;
+
   color: #444444;
 }
 
@@ -629,6 +653,10 @@ body {
 .contacts-address {
   font-style: normal;
   color: #444444;
+}
+
+.contacts-address-text {
+  margin: 0;
 }
 
 .contacts-phone {
