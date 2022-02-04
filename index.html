@@ -79,7 +79,7 @@
       <section class="main-slider">
         <h2 class="visually-hidden">Галерея товаров</h2>
         <ul class="slider-cards">
-          <li class="slider-card active">
+          <li class="slider-card slider-card-active">
             <img class="slider-image" src="images/slider-1.png" width="560" height="560" alt="Квадрокоптер">
             <div class="slider-text-wrapper">
               <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
@@ -171,28 +171,38 @@
           </li>
         </ul>
       </section>
-      <section class="main-advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <ul class="main-advantages-list">
-          <li class="main-advantages-item advantages-item-selected">
-            <a class="button-active main-advantages-link" href="#">Доставка</a>
-            <h3 class="main-advantages-title advantages-title-selected">Доставка</h3>
-            <p class="main-advantages-text advantages-text-selected">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </li>
-          <li class="main-advantages-item">
-            <a class="button main-advantages-link" href="#">Гарантия</a>
-            <h3 class="main-advantages-title">Гарантия</h3>
-            <p class="main-advantages-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-          </li>
-          <li class="main-advantages-item">
-            <a class="button main-advantages-link" href="#">Кредит</a>
-            <h3 class="main-advantages-title">Кредит</h3>
-            <p class="main-advantages-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-          </li>
-        </ul>
-      </section>
+      <div class="main-advantages-wrapper">
+        <section class="main-advantages">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <ul class="main-advantages-links">
+            <li>
+              <a class="button-active main-advantages-link" href="#">Доставка</a>
+            </li>
+            <li>
+              <a class="button main-advantages-link" href="#">Гарантия</a>
+            </li>
+            <li>
+              <a class="button main-advantages-link" href="#">Кредит</a>
+            </li>
+          </ul>
+          <ul class="main-advantages-list">
+            <li class="main-advantages-item advantages-item-active">
+              <h3 class="main-advantages-title advantages-title-selected">Доставка</h3>
+              <p class="main-advantages-text advantages-text-selected">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </li>
+            <li class="main-advantages-item">
+              <h3 class="main-advantages-title">Гарантия</h3>
+              <p class="main-advantages-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            </li>
+            <li class="main-advantages-item">
+              <h3 class="main-advantages-title">Кредит</h3>
+              <p class="main-advantages-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+            </li>
+          </ul>
+        </section>
+      </div>
     <section class="delivery">
-      <h2 class="delivery-title">Доставка под заказ</h2>
+      <h2 class="visually-hidden">Доставка под заказ</h2>
       <a class="delivery-link" href="#">Доставим редкий товар под заказ</a>
     </section>
     <section class="about-us">

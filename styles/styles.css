@@ -306,9 +306,13 @@ body {
 }
 
 .slider-card {
-  display: flex;
+  display: none;
   justify-content: space-between;
   width: 1160px;
+}
+
+.slider-card-active {
+  display: flex;
 }
 
 .slider-text-wrapper {
@@ -409,13 +413,53 @@ body {
 }
 
 /* Преимущества */
+.main-advantages-wrapper {
+  position: relative;
+  z-index: -2;
+
+  min-height: max-content;
+  overflow: hidden;
+
+  background-color: #ffffff;
+}
+
+.main-advantages-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 102px;
+  z-index: -1;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #f0f0f0;
+}
+
+.main-advantages {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.main-advantages-links {
+  width: 280px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  border-right: 7px solid #000000;
+}
+
 .main-advantages-link {
+  display: block;
   width: 153px;
+  margin: 0;
 }
 
 .button-active {
   display: block;
-  width: 280px;
+  width: 281px; /* Если поставить 280px то на некоторых масштабах появляется зазор почему-то */
   height: 40px;
 
   font-family: Raleway, sans-serif;
@@ -431,7 +475,17 @@ body {
 }
 
 .main-advantages-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.main-advantages-item {
+  display: none;
+}
+.advantages-item-active {
+  display: block;
 }
 
 .main-advantages-title {
@@ -443,28 +497,6 @@ body {
 
 .main-advantages-text {
   color: #444444;
-}
-
-
-.main-advantages {
-  position: relative;
-
-  min-height: max-content;
-  overflow: hidden;
-
-  background-color: #ffffff;
-}
-
-.main-advantages::after {
-  content: "";
-  position: absolute;
-  top: 102px;
-  z-index: -1;
-
-  width: 100%;
-  height: 100%;
-
-  background-color: #f0f0f0;
 }
 
 /* Доставка */
