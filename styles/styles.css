@@ -101,6 +101,7 @@ body {
   margin: 0;
   padding-left: 48px;
 
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: inherit;
@@ -639,7 +640,8 @@ body {
 }
 
 .contacts-text {
-  width: 496px;
+  width: 498px;
+  margin: 0;
 
   color: #444444;
 }
@@ -679,18 +681,48 @@ body {
   background-color: #f0f0f0;
 }
 
+.mailing-text-wrapper {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
 .mailing-title {
   font-family: Raleway, sans-serif;
   font-size: 50px;
   line-height: 50px;
   font-weight: 800;
+  width: 348px;
 }
 
 .mailing-text {
   color: #444444;
+  width: 560px;
+}
+
+.mailing-form-wrapper {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.mailing-form {
+  display: flex;
+  width: 810px;
 }
 
 .mailing-input {
+  flex-grow: 1;
+  width: 557px;
+  height: 54px;
+  margin: 0;
+  padding: 0;
+
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
   color: #444444;
 
   background-color: inherit;
@@ -699,6 +731,10 @@ body {
 }
 
 .mailing-button {
+  display: block;
+  width: 253px;
+  height: 57px;
+
   font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 21px;
