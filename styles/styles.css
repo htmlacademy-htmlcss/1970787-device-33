@@ -342,8 +342,22 @@ body {
 }
 
 /* Каталог */
+.main-catalog {
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .main-catalog-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.main-catalog-item {
+  width: 160px;
 }
 
 .main-catalog-link {
@@ -362,6 +376,7 @@ body {
   display: block;
   width: 160px;
   height: 160px;
+  margin-bottom: 33px;
 
   background-color: #ffe17f;
   background-repeat: no-repeat;
