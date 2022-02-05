@@ -683,29 +683,31 @@ body {
 
 .mailing-text-wrapper {
   display: flex;
+  justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
-  justify-content: space-between;
 }
 
 .mailing-title {
+  width: 348px;
+
   font-family: Raleway, sans-serif;
   font-size: 50px;
   line-height: 50px;
   font-weight: 800;
-  width: 348px;
 }
 
 .mailing-text {
-  color: #444444;
   width: 560px;
+
+  color: #444444;
 }
 
 .mailing-form-wrapper {
   display: flex;
+  justify-content: space-between;
   width: 1160px;
   margin: 0 auto;
-  justify-content: space-between;
 }
 
 .mailing-form {
@@ -772,11 +774,23 @@ body {
   background-color: #444444;
 }
 
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1160px;
+  margin: 0 auto;
+}
+
 /* Адрес */
+.footer-address-block {
+  width: 239px;
+}
+
 .footer-address-text {
   font-style: normal;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 .footer-address-text::after {
@@ -791,7 +805,14 @@ body {
 }
 
 /* Преимущества */
+.footer-advantages-wrapper {
+  flex-grow: 1;
+}
+
 .footer-advantages-list {
+  display: flex;
+  justify-content: center;
+
   list-style: none;
 }
 
@@ -807,6 +828,10 @@ body {
 }
 
 /* Телефон */
+.footer-phone-block {
+  width: 174px;
+}
+
 .footer-phone-text {
   font-style: normal;
   font-size: 16px;
@@ -816,6 +841,9 @@ body {
 
 /* Социальные сети */
 .footer-social-list {
+  display: flex;
+  justify-content: center;
+
   list-style: none;
 }
 
