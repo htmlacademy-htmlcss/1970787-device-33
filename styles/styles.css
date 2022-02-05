@@ -913,8 +913,18 @@ body {
 }
 
 /* Фильтры */
+.catalog-wrapper {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
 .catalog-products {
   background-color: #f0f0f0;
+}
+
+.filter-wrapper {
+  width: 320px;
 }
 
 .filter-text {
@@ -953,7 +963,18 @@ body {
   border: none;
 }
 
+.catalog-products-wrapper {
+  width: 840px;
+}
+
+.sorting-wrapper {
+  display: flex;
+  padding: 0 40px;
+}
+
 .select-control {
+  margin: 0 auto;
+
   font-family: Rubik, sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -962,13 +983,46 @@ body {
   border: none;
 }
 
+.catalog-button-up {
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  background-image: url(../images/catalog-button-up.svg);
+}
+
+.catalog-button-down {
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  background-image: url(../images/catalog-button-down.svg);
+}
+
+
 /* Каталог */
 .catalog {
+  width: 840px;
+  height: 100%;
+
   background-color: #ffffff;
 }
 
 .product-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 70px 40px 0;
+
   list-style: none;
+}
+
+.product-card {
+  margin: 0 40px 0 0;
+}
+
+.product-card:nth-child(even) {
+  margin: 0;
 }
 
 .product-card-link {
@@ -995,6 +1049,11 @@ body {
 
 /* Пагинация */
 .pagination-load-more {
+  display: block;
+  width: 760px;
+  height: 55px;
+  margin: 0 auto;
+
   font-family: Raleway, sans-serif;
   font-size: 16px;
   line-height: 19px;
@@ -1007,16 +1066,36 @@ body {
 }
 
 .pagination {
+  display: flex;
+  justify-content: center;
+  width: 760px;
+  height: 71px;
+  margin: 0 auto 78px;
+  padding: 0;
+
   list-style: none;
 
   background-color: #ebebeb;
 }
 
+.pagination-item:first-child {
+  margin-right: auto;
+}
+
+.pagination-item:last-child {
+  margin-left: auto;
+}
+
 .pagination-link {
+  display: block;
+  width: 128px;
+  height: 71px;
+
   font-family: Raleway, sans-serif;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 71px;
   font-weight: 800;
+  text-align: center;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
@@ -1024,9 +1103,13 @@ body {
 }
 
 .pagination-page-number {
+  display: block;
+  width: 40px;
+
   font-size: 16px;
-  line-height: 20px;
+  line-height: 71px;
   font-weight: 400;
+  text-align: center;
   color: #444444;
   text-decoration: none;
 
