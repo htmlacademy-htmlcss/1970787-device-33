@@ -1065,11 +1065,21 @@ body {
 }
 
 /* Адрес */
+.footer-address-wrapper {
+  padding-top: 62px;
+}
+
+.footer-logo {
+  margin-bottom: 35px;
+}
+
 .footer-address-block {
   width: 239px;
 }
 
 .footer-address-text {
+  margin: 0;
+
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
@@ -1090,13 +1100,24 @@ body {
 /* Преимущества */
 .footer-advantages-wrapper {
   flex-grow: 1;
+  padding-top: 137px;
+}
+
+.footer-advantages {
+  margin-bottom: 62px;
 }
 
 .footer-advantages-list {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 
   list-style: none;
+}
+
+.footer-advantages-item:not(:last-child) {
+  margin-right: 35px;
 }
 
 .footer-advantages-link {
@@ -1113,6 +1134,11 @@ body {
 /* Телефон */
 .footer-phone-block {
   width: 174px;
+  padding-top: 140px;
+}
+
+.footer-phone {
+  margin-bottom: 63px;
 }
 
 .footer-phone-text {
@@ -1123,11 +1149,21 @@ body {
 }
 
 /* Социальные сети */
+.footer-social {
+  margin-bottom: 61px;
+}
+
 .footer-social-list {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 
   list-style: none;
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 15px;
 }
 
 .social-button {
