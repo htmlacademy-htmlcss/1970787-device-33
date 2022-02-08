@@ -39,24 +39,30 @@
             <input class="sub-menu-checkbox" type="checkbox" name="sub-menu" id="sub-menu"> <!-- Убрать при реализации через JS -->
             <label class="navigation-catalog-button" for="sub-menu">Каталог товаров</label> <!-- Убрать при реализации через JS -->
             <ul class="navigation-catalog-list"> <!--Список скрывается/отображается по клику кнопки-->
-              <li class="navigation-catalog-item">
-                <a href="#" class="navigation-catalog-link">Виртуальная реальность</a>
-              </li>
-              <li class="navigation-catalog-item">
-                <a href="catalog.html" class="navigation-catalog-link">Моноподы для cелфи</a>
-              </li>
-              <li class="navigation-catalog-item">
-                <a href="#" class="navigation-catalog-link">Экшн-камеры</a>
-              </li>
-              <li class="navigation-catalog-item">
-                <a href="#" class="navigation-catalog-link">Фитнес-браслеты</a>
-              </li>
-              <li class="navigation-catalog-item">
-                <a href="#" class="navigation-catalog-link">Умные часы</a>
-              </li>
-              <li class="navigation-catalog-item">
-                <a href="#" class="navigation-catalog-link">Квадрокоптеры</a>
-              </li>
+              <div class="navigation-item-wrapper">
+                <li class="navigation-catalog-item">
+                  <a href="#" class="navigation-catalog-link">Виртуальная реальность</a>
+                </li>
+                <li class="navigation-catalog-item">
+                  <a href="catalog.html" class="navigation-catalog-link">Моноподы для cелфи</a>
+                </li>
+                <li class="navigation-catalog-item">
+                  <a href="#" class="navigation-catalog-link">Экшн-камеры</a>
+                </li>
+              </div>
+              <div class="navigation-item-wrapper">
+                <li class="navigation-catalog-item">
+                  <a href="#" class="navigation-catalog-link">Фитнес-браслеты</a>
+                </li>
+                <li class="navigation-catalog-item">
+                  <a href="#" class="navigation-catalog-link">Умные часы</a>
+                </li>
+              </div>
+              <div class="navigation-item-wrapper">
+                <li class="navigation-catalog-item">
+                  <a href="#" class="navigation-catalog-link">Квадрокоптеры</a>
+                </li>
+              </div>
             </ul>
           </div>
           <ul class="navigation-advantages-list">
@@ -86,10 +92,14 @@
               <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
               <a class="button slider-link" href="#">Подробнее</a>
               <div class="slider-properties">
-                <b class="slider-property-bold">800 м</b>
-                <p class="slider-property">Дальность полета</p>
-                <b class="slider-property-bold">50 м</b>
-                <p class="slider-property">Радиус поражения</p>
+                <div class="slider-properties-wrapper">
+                  <b class="slider-property-bold">800 м</b>
+                  <p class="slider-property">Дальность полета</p>
+                </div>
+                <div class="slider-properties-wrapper">
+                  <b class="slider-property-bold">50 м</b>
+                  <p class="slider-property">Радиус поражения</p>
+                </div>
               </div>
             </div>
           </li>
@@ -100,8 +110,10 @@
               <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
               <a class=" button slider-link" href="#">Подробнее</a>
               <div class="slider-properties">
-                <b class="slider-property-bold">48 часов</b>
-                <p class="slider-property">Без подзарядки</p>
+                <div class="slider-properties-wrapper">
+                  <b class="slider-property-bold">48 часов</b>
+                  <p class="slider-property">Без подзарядки</p>
+                </div>
               </div>
             </div>
           </li>
@@ -112,12 +124,18 @@
               <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
               <a class="button slider-link" href="#">Подробнее</a>
               <div class="slider-properties">
-                <b class="slider-property-bold">8,5 м</b>
-                <p class="slider-property">Длина палки</p>
-                <b class="slider-property-bold">5 кг</b>
-                <p class="slider-property">Вес палки</p>
-                <b class="slider-property-bold">Карбон</b>
-                <p class="slider-property">Материал</p>
+                <div class="slider-properties-wrapper">
+                  <b class="slider-property-bold">8,5 м</b>
+                  <p class="slider-property">Длина палки</p>
+                </div>
+                <div class="slider-properties-wrapper">
+                  <b class="slider-property-bold">5 кг</b>
+                  <p class="slider-property">Вес палки</p>
+                </div>
+                <div class="slider-properties-wrapper">
+                  <b class="slider-property-bold">Карбон</b>
+                  <p class="slider-property">Материал</p>
+                </div>
               </div>
             </div>
           </li>
@@ -130,7 +148,7 @@
         </button>
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+            <button class="slider-pagination-button slider-pagination-button-active" type="button">
               <span class="visually-hidden">1 товар</span>
             </button>
           </li>

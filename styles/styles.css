@@ -82,17 +82,35 @@ body {
   margin-left: 60px;
 }
 
+.navigation {
+  padding-top: 43px;
+}
+
+.navigation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  display: block;
+  width: 1160px;
+  height: 300px;
+
+  background-color: #ffe17f;
+}
+
 /* Обертка строки поиска и пользовательских кнопок */
 .header-search-wrapper {
   display: flex;
   width: 1040px;
-  margin: 0 auto;
+  margin: 0 auto 45px;
 }
 
 /* Поиск в хедере */
 .search-form {
   display: flex;
   width: 517px;
+  margin-right: 53px;
 }
 
 .search-input {
@@ -108,6 +126,7 @@ body {
 
   background-color: inherit;
   border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
 }
 
 .search-button {
@@ -122,6 +141,7 @@ body {
   background-color: inherit;
   border: 2px solid #000000;
   border-left: none;
+  border-radius: 0 50px 50px 0;
 }
 
 /* Кнопки пользователя */
@@ -132,6 +152,14 @@ body {
   padding: 0;
 
   list-style: none;
+}
+
+.navigation-user-item {
+  padding: 5px 0;
+}
+
+.navigation-user-item:not(:last-child) {
+  margin-right: 61px;
 }
 
 .navigation-user-item:first-child {
@@ -148,12 +176,14 @@ body {
   display: flex;
   align-items: center;
   width: 1040px;
+  height: 20px;
   margin: 0 auto;
 }
 
 /* Ссылки каталога */
 .navigation-catalog-button {
   position: relative;
+  z-index: 2;
 
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -169,6 +199,7 @@ body {
 .navigation-catalog {
   position: relative;
 
+  height: 20px;
   margin-right: auto;
 }
 
@@ -178,7 +209,7 @@ body {
   position: absolute;
   top: 50%;
   right: -57px;
-  z-index: 1;
+  z-index: 2;
 
   display: block;
   width: 48px;
@@ -202,7 +233,7 @@ body {
   display: none;
 }
 .sub-menu-checkbox:checked ~ .navigation-catalog-list {
-  display: block;
+  display: flex;
 }
 
 .sub-menu-checkbox:checked + .navigation-catalog-button::after {
@@ -213,16 +244,22 @@ body {
   position: absolute;
   top: 100%;
   left: -60px;
+  z-index: 1;
 
   display: none;
+  box-sizing: border-box;
   width: 1160px;
   height: 180px;
   margin: 0;
-  padding: 0;
+  padding: 33px 60px 27px;
 
   list-style: none;
 
   background-color: #ffe17f;
+}
+
+.navigation-item-wrapper:not(:last-child) {
+  margin-right: 30px;
 }
 
 .navigation-catalog-link {
@@ -238,9 +275,15 @@ body {
 
 /* Ссылки преимуществ */
 .navigation-advantages-list {
+  z-index: 2;
+
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 471px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
 
   list-style: none;
 }
@@ -293,8 +336,29 @@ body {
   background-color: #ffe17f;
 }
 
+.button:hover::before {
+  top: -10px;
+
+  height: 40px;
+}
+
+.button:focus::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  left: -5px;
+  z-index: -1;
+
+  height: 40px;
+
+  border: 2px solid #af4fff;
+}
+
 /* Слайдер */
 .main-slider {
+  position: relative;
+
   width: 1160px;
   margin: 0 auto;
 }
@@ -304,46 +368,174 @@ body {
   padding: 0;
 
   list-style: none;
+
+  counter-reset: cards;
 }
 
 .slider-card {
-  display: none;
+  position: absolute;
+
+  display: flex;
   justify-content: space-between;
   width: 1160px;
+
+  visibility: hidden;
+
+  counter-increment: cards;
 }
 
 .slider-card-active {
-  display: flex;
+  position: static;
+
+  visibility: visible;
 }
 
 .slider-text-wrapper {
   width: 560px;
+  padding-top: 122px;
 }
 
 .slider-title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 29px;
+
   font-family: Raleway, sans-serif;
   font-size: 50px;
   line-height: 50px;
   font-weight: 800;
 }
 
+.slider-title::before {
+  content: "0" counter(cards);
+  position: absolute;
+  top: -92px;
+  left: 261px;
+  z-index: -1;
+
+  display: block;
+  width: 250px;
+  height: 135px;
+
+  font-family: Rubik, sans-serif;
+  font-size: 180px;
+  line-height: 135px;
+  text-align: right;
+  color: #ffffff;
+}
+
 .slider-text {
+  margin-top: 0;
+  margin-bottom: 61px;
+
   color: #444444;
 }
 
 .slider-link {
   width: 210px;
+  margin-bottom: 59px;
+}
+
+.slider-properties {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slider-properties-wrapper:not(:last-child) {
+  margin-right: 20px;
 }
 
 .slider-property-bold {
+  display: inline-block;
+  height: 30px;
+  margin-top: 0;
+  margin-bottom: 12px;
+
   font-size: 36px;
   line-height: 30px;
   font-weight: 400;
 }
 
 .slider-property {
+  margin: 0;
+
   font-size: 16px;
   color: #444444;
+}
+
+.slider-button {
+  position: absolute;
+  top: 0;
+
+  width: 20px;
+  height: 560px;
+
+  background: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.slider-prev {
+  background-image: url(../images/slider-arrow-left.svg);
+}
+
+.slider-next {
+  left: 540px;
+
+  background-image: url(../images/slider-arrow-right.svg);
+}
+
+.slider-button:hover, .slider-pagination-button:hover {
+  opacity: 0.6;
+}
+
+.slider-button:focus, .slider-pagination-button:focus {
+  border: 2px solid #af4fff;
+}
+
+.slider-pagination {
+  position: absolute;
+  top: 374px;
+  right: 0;
+
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider-pagination-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.slider-pagination-button {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+
+  background: none;
+  border: 2px solid #ffffff;
+}
+
+.slider-pagination-button::after {
+  content: "";
+
+  display: block;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.slider-pagination-button-active::after {
+  background-color: #000000;
 }
 
 /* Каталог */
@@ -416,12 +608,10 @@ body {
 /* Преимущества */
 .main-advantages-wrapper {
   position: relative;
-  z-index: -2;
 
   min-height: max-content;
   overflow: hidden;
 
-  background-color: #ffffff;
 }
 
 .main-advantages-wrapper::after {
@@ -1088,12 +1278,13 @@ body {
 
 .pagination-link {
   display: block;
-  width: 128px;
+  box-sizing: border-box;
   height: 71px;
+  padding: 25px;
 
   font-family: Raleway, sans-serif;
   font-size: 18px;
-  line-height: 71px;
+  line-height: 20px;
   font-weight: 800;
   text-align: center;
   color: #000000;
