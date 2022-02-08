@@ -155,7 +155,55 @@ body {
 }
 
 .navigation-user-item {
+  position: relative;
+
   padding: 5px 0;
+}
+
+.navigation-user-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -32px;
+
+  display: block;
+  width: 20px;
+  height: 40px;
+
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.user-item::before {
+  background-image: url(../images/user.svg);
+}
+
+.compare-item::before {
+  background-image: url(../images/compare.svg);
+}
+
+.basket-item::before {
+  background-image: url(../images/basket.svg);
+}
+
+.basket-item::after {
+  content: "2";
+  position: absolute;
+  top: 10px;
+  left: -43px;
+
+  display: block;
+  width: 21px;
+  height: 21px;
+  padding-top: 2px;
+
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+
 }
 
 .navigation-user-item:not(:last-child) {
