@@ -763,7 +763,8 @@ body {
 /* Доставка */
 .delivery {
   width: 1160px;
-  margin: 0 auto;
+  margin: 0 auto 70px;
+  padding-top: 70px;
 }
 
 .delivery-link {
@@ -825,7 +826,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 1160px;
-  margin: 0 auto;
+  margin: 0 auto 80px;
 }
 
 .about-us {
@@ -833,6 +834,8 @@ body {
 }
 
 .about-us-title {
+  margin: 0 0 48px;
+
   font-family: Raleway, sans-serif;
   font-size: 50px;
   line-height: 50px;
@@ -852,12 +855,19 @@ body {
 
 .about-us-text {
   width: 497px;
+  margin: 0 0 30px;
 
   color: #444444;
 }
 
+.about-us-delivery-list {
+  margin: 0 0 40px;
+  padding-left: 18px;
+}
+
 .about-us-delivery-item {
   margin-bottom: 19px;
+  padding-left: 8px;
 
   line-height: 20px;
   font-weight: 700;
@@ -882,6 +892,8 @@ body {
 }
 
 .contacts-title {
+  margin: 0 0 48px 0;
+
   font-family: Raleway, sans-serif;
   font-size: 50px;
   line-height: 50px;
@@ -901,18 +913,22 @@ body {
 
 .contacts-text {
   width: 498px;
-  margin: 0;
+  margin: 0 0 30px;
 
   color: #444444;
 }
 
 .contacts-subtitle {
+  margin: 0 0 15px;
+
   font-size: 24px;
   font-weight: 700;
   color: #444444;
 }
 
 .contacts-address {
+  margin-bottom: 30px;
+
   font-style: normal;
   color: #444444;
 }
@@ -926,6 +942,7 @@ body {
 }
 
 .contacts-schedule {
+  margin: 0 0 40px;
   padding: 0;
 
   color: #444444;
