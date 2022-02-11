@@ -605,6 +605,7 @@ body {
 
 .main-catalog-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -878,6 +879,7 @@ body {
 /* О нас */
 .about-us-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 1160px;
   margin: 0 auto 80px;
@@ -1163,6 +1165,7 @@ body {
 
 .footer-advantages-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -1209,6 +1212,7 @@ body {
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0;
   padding: 0;
