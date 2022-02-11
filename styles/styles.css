@@ -83,10 +83,16 @@ body {
 }
 
 .navigation {
+  margin-bottom: 38px;
   padding-top: 43px;
 }
 
-.navigation::before {
+.navigation-index {
+  margin-bottom: 0;
+}
+
+
+.navigation-index::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1237,6 +1243,7 @@ body {
 /* catalog.html */
 .main-inner {
   flex-grow: 1;
+  padding-top: 35px;
 }
 
 .inner-header {
@@ -1246,6 +1253,8 @@ body {
 
 /* Заголовок */
 .inner-header-title {
+  margin: 0 0 16px;
+
   font-family: Raleway, sans-serif;
   font-size: 50px;
   line-height: 50px;
@@ -1255,8 +1264,10 @@ body {
 /* Хлебные крошки */
 .breadcrumbs {
   display: flex;
+  margin: 0 0 35px;
   padding: 0;
 
+  line-height: 19px;
   list-style: url("../images/breadcrumbs-arrow.svg");
 }
 
