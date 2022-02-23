@@ -745,6 +745,8 @@ body {
 }
 
 .main-catalog-link {
+  position: relative;
+
   font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -765,6 +767,29 @@ body {
   background-color: #ffe17f;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.main-catalog-link::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+
+  display: block;
+  width: 164px;
+  height: 257px;
+}
+
+.main-catalog-link:focus {
+  outline: none;
+}
+
+.main-catalog-link:focus::after {
+  outline: 2px solid #af4fff;
+}
+
+.main-catalog-link:hover::before {
+  background-color: #ffc700;
 }
 
 .vr-link::before {
