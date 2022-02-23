@@ -1055,6 +1055,18 @@ body {
   border-radius: 50%;
 }
 
+.delivery-link:hover::before {
+  background-color: #ffc700;
+}
+
+.delivery-link:hover::after {
+  color: #000000;
+}
+
+.delivery-link:focus {
+  outline: 2px solid #af4fff;
+}
+
 /* О нас */
 .about-us-wrapper {
   display: flex;
