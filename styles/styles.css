@@ -1457,6 +1457,18 @@ body {
   letter-spacing: 0.2em;
 }
 
+.footer-advantages-link:hover {
+  padding-bottom: 4px;
+
+  color: #ffc700;
+
+  border-bottom: 2px solid #ffc700;
+}
+
+.footer-advantages-link:focus {
+  outline: 2px solid #af4fff;
+}
+
 /* Телефон */
 .footer-phone-block {
   width: 177px;
@@ -1475,8 +1487,25 @@ body {
   color: inherit;
 }
 
+.footer-phone-text:hover {
+  color: #ffc700;
+}
+
+.footer-phone-text:focus {
+  outline: 2px solid #af4fff;
+}
+
 .htmlacademy-link {
   float: right;
+  height: 33px;
+}
+
+.htmlacademy-link:hover .htmlacademy-logo > path {
+  fill: #ffffff;
+}
+
+.htmlacademy-link:focus {
+  outline: 2px solid #af4fff;
 }
 
 /* Социальные сети */
@@ -1503,20 +1532,15 @@ body {
   display: block;
   width: 40px;
   height: 40px;
-
-  background-repeat: no-repeat;
 }
 
-.facebook-button {
-  background-image: url("../images/facebook.svg");
+.social-button:hover .social-image circle {
+  fill: #ffc700;
+  fill-opacity: 1;
 }
 
-.instagram-button {
-  background-image: url("../images/instagram.svg");
-}
-
-.twitter-button {
-  background-image: url("../images/twitter.svg");
+.social-button:focus {
+  outline: 2px solid #af4fff;
 }
 
 /* catalog.html */
