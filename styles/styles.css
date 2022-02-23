@@ -859,7 +859,7 @@ body {
 .main-advantages-link {
   display: block;
   width: 153px;
-  margin: 0 0 56px 4px;
+  margin: 0 0 56px 6px;
 }
 
 .button-active {
@@ -896,6 +896,30 @@ body {
   background-color: #000000;
 }
 
+.button-active::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -7px;
+  z-index: 1;
+
+  display: block;
+  width: 284px;
+  height: 44px;
+}
+
+.button-active:hover {
+  color: rgba(255, 225, 127, 0.5);
+}
+
+.button-active:focus {
+  outline: none;
+}
+
+.button-active:focus::after {
+  outline: 2px solid #af4fff;
+}
+
 .main-advantages-list {
   max-width: 748px;
   margin: 0;
@@ -921,8 +945,8 @@ body {
 }
 
 .advantages-delivery::after {
-  top: 2px;
-  left: 557px;
+  top: 4px;
+  left: 558px;
 
   width: 135px;
   height: 165px;
