@@ -1873,7 +1873,7 @@ body {
   display: block;
   width: 760px;
   height: 55px;
-  padding: 0;
+  padding: 0 0 0 4px;
 
   font-family: Raleway, sans-serif;
   font-size: 16px;
@@ -1920,7 +1920,7 @@ body {
   display: block;
   box-sizing: border-box;
   height: 71px;
-  padding: 25px;
+  padding: 26px 23px;
 
   font-family: Raleway, sans-serif;
   font-size: 18px;
