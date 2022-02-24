@@ -1769,11 +1769,26 @@ body {
 
 .product-card {
   position: relative;
+}
 
+.new-product-mark::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  z-index: 1;
+
+  display: block;
+  width: 60px;
+  height: 60px;
+
+  background-image: url(../images/new-product-mark.svg);
 }
 
 .product-card-image {
-  margin-bottom: 32px;
+  position: relative;
+
+  margin-bottom: 23px;
 
   background-color: #ffffff;
 }
@@ -1810,7 +1825,7 @@ body {
   position: absolute;
   top: 170px;
   left: 70px;
-  z-index: 2;
+  z-index: 3;
 
   display: none;
   width: 210px;
@@ -1822,6 +1837,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
 
   display: none;
   width: 360px;
