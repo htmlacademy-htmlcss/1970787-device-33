@@ -1625,7 +1625,7 @@ body {
 }
 
 .filter-text {
-  margin: 0 0 60px;
+  margin: 0 0 58px;
 
   font-family: Raleway, sans-serif;
   font-size: 16px;
@@ -1666,6 +1666,14 @@ body {
   line-height: 19px;
 }
 
+.filter-control:hover {
+  opacity: 0.6;
+}
+
+.filter-input:focus {
+  outline: 2px solid #af4fff;
+}
+
 .catalog-filter-button {
   width: 210px;
 
@@ -1686,7 +1694,8 @@ body {
 }
 
 .select-control {
-  margin: auto;
+  margin: auto 203px auto auto;
+  padding-right: 27px;
 
   font-family: Rubik, sans-serif;
   font-size: 18px;
@@ -1694,26 +1703,47 @@ body {
 
   background-color: inherit;
   border: none;
+  cursor: pointer;
 }
 
-.catalog-button-up {
+.select-control:hover {
+  opacity: 0.6;
+}
+
+.select-control:focus {
+  outline: 2px solid #af4fff;
+}
+
+.arrow-button-wrapper {
+  margin: 20px 0;
+}
+
+.arrow-button-wrapper:focus-within {
+  outline: 2px solid #af4fff;
+}
+
+.catalog-arrow-button {
   display: block;
   width: 30px;
   height: 30px;
-  margin: 20px 0;
 
   background-image: url(../images/catalog-button-up.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
 }
 
-.catalog-button-down {
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: 20px 0;
-
-  background-image: url(../images/catalog-button-down.svg);
+.button-down {
+  transform: rotate(180deg);
 }
 
+.catalog-arrow-button:hover {
+  opacity: 0.5;
+}
+
+.catalog-arrow-button:focus {
+  outline: none;
+}
 
 /* Каталог */
 .catalog {
