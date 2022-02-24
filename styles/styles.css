@@ -91,7 +91,7 @@ body {
 }
 
 .navigation {
-  margin-bottom: 38px;
+  margin-bottom: 41px;
   padding-top: 43px;
 }
 
@@ -167,13 +167,13 @@ body {
 .search-input-wrapper::before {
   content: "";
   position: absolute;
-  top: -2px;
-  left: -2px;
+  top: 0px;
+  left: 0px;
   z-index: -1;
 
   display: block;
-  width: 363px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
 }
 
 .search-input:focus {
@@ -182,6 +182,7 @@ body {
 
 .search-input-wrapper:focus-within::before {
   outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .search-button {
@@ -205,12 +206,12 @@ body {
 .search-button::before {
   content: "";
   position: absolute;
-  top: -4px;
-  left: -4px;
+  top: 0px;
+  left: 0px;
 
   display: block;
-  width: 164px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
 }
 
 .search-button:hover {
@@ -225,6 +226,7 @@ body {
 
 .search-button:focus::before {
   outline: 2px solid #af4fff;
+  outline-offset: 4px;
 }
 
 /* Кнопки пользователя */
@@ -410,15 +412,16 @@ body {
   width: 1160px;
   height: 180px;
   margin: 0;
-  padding: 33px 60px 27px;
+  padding: 24px 60px 27px;
 
+  line-height: 34px;
   list-style: none;
 
   background-color: #ffe17f;
 }
 
 .navigation-item-wrapper:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 58px;
 }
 
 .navigation-catalog-link {
@@ -744,6 +747,11 @@ body {
   width: 160px;
 }
 
+.main-catalog-item:focus-within {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .main-catalog-link {
   position: relative;
 
@@ -769,23 +777,8 @@ body {
   background-position: center;
 }
 
-.main-catalog-link::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-
-  display: block;
-  width: 164px;
-  height: 257px;
-}
-
 .main-catalog-link:focus {
   outline: none;
-}
-
-.main-catalog-link:focus::after {
-  outline: 2px solid #af4fff;
 }
 
 .main-catalog-link:hover::before {
@@ -899,13 +892,13 @@ body {
 .button-active::after {
   content: "";
   position: absolute;
-  top: -12px;
-  left: -7px;
+  top: -10px;
+  left: -5px;
   z-index: 1;
 
   display: block;
-  width: 284px;
-  height: 44px;
+  width: 280px;
+  height: 40px;
 }
 
 .button-active:hover {
@@ -918,6 +911,8 @@ body {
 
 .button-active:focus::after {
   outline: 2px solid #af4fff;
+  outline-offset: 2px;
+
 }
 
 .main-advantages-list {
@@ -1071,6 +1066,7 @@ body {
 
 .delivery-link:focus {
   outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 /* О нас */
@@ -1546,7 +1542,7 @@ body {
 /* catalog.html */
 .main-inner {
   flex-grow: 1;
-  padding-top: 35px;
+  padding-top: 32px;
 }
 
 .inner-header {
@@ -1558,7 +1554,7 @@ body {
 
 /* Заголовок */
 .inner-header-title {
-  margin: 0 0 16px;
+  margin: 0 0 14px;
 
   font-family: Raleway, sans-serif;
   font-size: 50px;
@@ -1577,10 +1573,13 @@ body {
 }
 
 .breadcrumbs-item {
-  margin: 0 36px 0 0;
+  margin: 0 30px 0 0;
+  padding-left: 8px;
 }
 
 .breadcrumbs-item:first-of-type {
+  padding-left: 0;
+
   list-style: none;
 }
 
@@ -1593,6 +1592,14 @@ body {
   line-height: 19px;
   color: inherit;
   text-decoration: none;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:focus {
+  outline: 2px solid #af4fff;
 }
 
 /* Фильтры */
@@ -1613,7 +1620,7 @@ body {
 }
 
 .filter-text {
-  margin: 0 0 60px;
+  margin: 0 0 58px;
 
   font-family: Raleway, sans-serif;
   font-size: 16px;
@@ -1654,6 +1661,14 @@ body {
   line-height: 19px;
 }
 
+.filter-control:hover {
+  opacity: 0.6;
+}
+
+.filter-input:focus {
+  outline: 2px solid #af4fff;
+}
+
 .catalog-filter-button {
   width: 210px;
 
@@ -1674,7 +1689,8 @@ body {
 }
 
 .select-control {
-  margin: auto;
+  margin: auto 203px auto auto;
+  padding-right: 27px;
 
   font-family: Rubik, sans-serif;
   font-size: 18px;
@@ -1682,26 +1698,47 @@ body {
 
   background-color: inherit;
   border: none;
+  cursor: pointer;
 }
 
-.catalog-button-up {
+.select-control:hover {
+  opacity: 0.6;
+}
+
+.select-control:focus {
+  outline: 2px solid #af4fff;
+}
+
+.arrow-button-wrapper {
+  margin: 20px 0;
+}
+
+.arrow-button-wrapper:focus-within {
+  outline: 2px solid #af4fff;
+}
+
+.catalog-arrow-button {
   display: block;
   width: 30px;
   height: 30px;
-  margin: 20px 0;
 
   background-image: url(../images/catalog-button-up.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
 }
 
-.catalog-button-down {
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin: 20px 0;
-
-  background-image: url(../images/catalog-button-down.svg);
+.button-down {
+  transform: rotate(180deg);
 }
 
+.catalog-arrow-button:hover {
+  opacity: 0.5;
+}
+
+.catalog-arrow-button:focus {
+  outline: none;
+}
 
 /* Каталог */
 .catalog {
@@ -1727,11 +1764,31 @@ body {
 
 .product-card {
   position: relative;
+}
 
+.new-product-mark::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  z-index: 1;
+
+  display: block;
+  width: 60px;
+  height: 60px;
+
+  background-image: url(../images/new-product-mark.svg);
+}
+
+.product-card:focus-within {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .product-card-image {
-  margin-bottom: 32px;
+  position: relative;
+
+  margin-bottom: 23px;
 
   background-color: #ffffff;
 }
@@ -1752,6 +1809,10 @@ body {
   letter-spacing: -0.02em;
 }
 
+.product-card-link:focus {
+  outline: none;
+}
+
 .product-card-title {
   margin: 0;
 
@@ -1768,7 +1829,7 @@ body {
   position: absolute;
   top: 170px;
   left: 70px;
-  z-index: 2;
+  z-index: 3;
 
   display: none;
   width: 210px;
@@ -1780,6 +1841,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
 
   display: none;
   width: 360px;
@@ -1811,7 +1873,7 @@ body {
   display: block;
   width: 760px;
   height: 55px;
-  padding: 0;
+  padding: 0 0 0 4px;
 
   font-family: Raleway, sans-serif;
   font-size: 16px;
@@ -1822,6 +1884,15 @@ body {
 
   background-color: #ffffff;
   border: 3px solid #e5e5e5;
+}
+
+.pagination-load-more:hover {
+  border-color: #000000;
+}
+
+.pagination-load-more:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .pagination {
@@ -1849,7 +1920,7 @@ body {
   display: block;
   box-sizing: border-box;
   height: 71px;
-  padding: 25px;
+  padding: 26px 23px;
 
   font-family: Raleway, sans-serif;
   font-size: 18px;
@@ -1862,7 +1933,15 @@ body {
   letter-spacing: 0.2em;
 }
 
+.pagination-disabled {
+  color: #ebebeb;
+
+  cursor: default;
+}
+
 .pagination-page-number {
+  position: relative;
+
   display: block;
   width: 40px;
 
@@ -1870,8 +1949,45 @@ body {
   line-height: 71px;
   font-weight: 400;
   text-align: center;
-  color: #444444;
+  color: rgba(68, 68, 68, 0.3);
   text-decoration: none;
+}
 
-  opacity: 0.3;
+.pagination-current {
+  cursor: default;
+}
+
+.pagination-link:hover {
+  background-color: #dcdcdc;
+}
+
+.pagination-disabled:hover {
+  background-color: #ebebeb;
+}
+
+.pagination-link:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.pagination-page-number::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: -2px;
+
+  width: 44px;
+  height: 44px;
+}
+
+.pagination-page-number:hover {
+  color: #444444;
+}
+
+.pagination-page-number:focus {
+  outline: none;
+}
+
+.pagination-page-number:focus::before {
+  outline: 2px solid #af4fff;
 }
