@@ -21,7 +21,7 @@
             <div class="search-input-wrapper">
               <input class="search-input" type="search" name="search-input" id="search-input" placeholder="Поиск по сайту">
             </div>
-            <button class="search-button" type="submit">Найти</button>
+            <button class="search-button" type="submit" >Найти</button>
           </form>
           <ul class="navigation-user-list">
             <li class="navigation-user-item user-item">
@@ -37,10 +37,7 @@
         </div>
         <div class="navigation-catalog-wrapper">
           <div class="navigation-catalog">
-            <!-- Для реализации выпадающего меню через JS использовать "button", без JS используем "label" и "input" -->
-            <!-- <button class="navigation-catalog-button" type="button" name="navigation-catalog-button">Каталог товаров</button> --> <!-- Раскомментить при реализации через JS -->
-            <input class="sub-menu-checkbox" type="checkbox" name="sub-menu" id="sub-menu"> <!-- Убрать при реализации через JS -->
-            <label class="navigation-catalog-button" for="sub-menu">Каталог товаров</label> <!-- Убрать при реализации через JS -->
+            <button class="navigation-catalog-button navigation-catalog-close" type="button" name="navigation-catalog-button">Каталог товаров</button>  <!-- Для открытия меню убрать стиль "navigation-catalog-close" -->
             <ul class="navigation-catalog-list"> <!--Список скрывается/отображается по клику кнопки-->
               <div class="navigation-item-wrapper">
                 <li class="navigation-catalog-item">

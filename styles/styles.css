@@ -161,7 +161,6 @@ body {
   background-image: url(../images/search.svg);
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .search-input-wrapper::before {
@@ -214,10 +213,21 @@ body {
   height: 100%;
 }
 
+.search-input:disabled, .search-button:disabled {
+  opacity: 0.3;
+}
+
 .search-button:hover {
   color: #ffffff;
 
   background-color: #000000;
+}
+
+.search-button:disabled:hover {
+  color: inherit;
+
+  background-color: inherit;
+  cursor: default;
 }
 
 .search-button:focus {
@@ -345,6 +355,8 @@ body {
   position: relative;
   z-index: 2;
 
+  padding: 0;
+
   font-family: Raleway, sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -376,7 +388,7 @@ body {
   width: 48px;
   height: 48px;
 
-  background-image: url("../images/catalog-plus.svg");
+  background-image: url("../images/catalog-minus.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid #000000;
@@ -385,19 +397,43 @@ body {
   opacity: 0.3;
 }
 
+.navigation-catalog-close::after {
+  background-image: url("../images/catalog-plus.svg");
+}
+
 .navigation-catalog-button:hover::after {
   opacity: 1;
 }
 
-/* Выпадающий список без JS */
-.sub-menu-checkbox {
+.navigation-catalog-button::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: -2px;
+
+  width: 297px;
+  height: 54px;
+}
+
+.navigation-catalog-button:focus {
+  outline: none;
+}
+
+
+.navigation-catalog-button:focus::before {
+  outline: 2px solid #af4fff;
+}
+
+/* Скрытие выпадающего списка */
+.navigation-catalog-close ~ .navigation-catalog-list {
   display: none;
 }
-.sub-menu-checkbox:checked ~ .navigation-catalog-list {
+
+.navigation-catalog:focus-within > .navigation-catalog-list {
   display: flex;
 }
 
-.sub-menu-checkbox:checked + .navigation-catalog-button::after {
+.navigation-catalog:focus-within > .navigation-catalog-button::after {
   background-image: url("../images/catalog-minus.svg");
 }
 
@@ -407,7 +443,7 @@ body {
   left: -60px;
   z-index: 1;
 
-  display: none;
+  display: flex;
   box-sizing: border-box;
   width: 1160px;
   height: 180px;
@@ -689,6 +725,7 @@ body {
   right: -2px;
 
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
