@@ -1576,9 +1576,9 @@ body {
   background-color: rgba(240, 240, 240, 0.9);
 }
 
-.modal-conteiner-close {
+/* .modal-conteiner-close {
   display: none;
-}
+} */
 
 .modal {
   position: relative;
@@ -1873,7 +1873,11 @@ body {
 }
 
 .delivery-quantity-button:hover {
-  background-color: #dcdcdc;
+  background-color: #ebebeb;
+}
+
+.delivery-quantity-button:hover > svg > path {
+  fill-opacity: 0.6;
 }
 
 .delivery-quantity-button:focus {
@@ -1883,12 +1887,10 @@ body {
   outline-offset: 2px;
 }
 
-.button-minus {
-  background-image: url(../images/button-minus.svg);
-}
-
-.button-plus {
-  background-image: url(../images/button-plus.svg);
+.delivery-quantity-button:disabled {
+  background-color: #f0f0f0;
+  cursor: default;
+  opacity: 0.3;
 }
 
 .delivery-number-field::-webkit-outer-spin-button, .delivery-number-field::-webkit-inner-spin-button {
