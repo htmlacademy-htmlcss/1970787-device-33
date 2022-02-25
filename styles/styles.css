@@ -1287,25 +1287,6 @@ body {
   display: flex;
 }
 
-.mailing-input-wrapper {
-  position: relative;
-}
-
-.mailing-input-wrapper::before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  z-index: 1;
-
-  width: 564px;
-  height: 61px;
-}
-
-.mailing-input-wrapper:focus-within::before {
-  outline: 2px solid #af4fff;
-}
-
 .mailing-input {
   position: relative;
   z-index: 1;
@@ -1328,7 +1309,12 @@ body {
 }
 
 .mailing-input:focus {
+  background-color: #dcdcdc;
   outline: none;
+}
+
+.mailing-input:invalid {
+  border-color: #ff3d3d;
 }
 
 .mailing-button {
