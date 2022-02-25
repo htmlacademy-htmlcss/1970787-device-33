@@ -105,7 +105,27 @@
 
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость</legend>
-                <!--Не размечаем, разметка этого блока в 8м лайве-->
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0px; width: 119px"> <!--Стиль для изменения длины слайдера-->
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную стоимость.</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную стоимость.</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="range-wrapper-inputs">
+                      <label class="catalog-range-label label-min" style="margin-left: 0px;"> <!--Стиль для изменения положения надписи-->
+                        от <input class="range-input" type="number" value="0" name="min-price">
+                      </label>
+                      <label class="catalog-range-label label-max" style="margin-right: 73px;"> <!--Стиль для изменения положения надписи-->
+                        до <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px">
+                      </label>
+                    </div>
+                  </div>
               </fieldset>
 
               <fieldset class="catalog-filter-group">

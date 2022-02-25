@@ -573,6 +573,17 @@ body {
   border: 2px solid #af4fff;
 }
 
+.button:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.button:disabled::before {
+  top: 6px;
+
+  height: 8px;
+}
+
 /* Слайдер */
 .main-slider {
   position: relative;
@@ -1576,9 +1587,9 @@ body {
   background-color: rgba(240, 240, 240, 0.9);
 }
 
-/* .modal-conteiner-close {
+.modal-conteiner-close {
   display: none;
-} */
+}
 
 .modal {
   position: relative;
@@ -2002,7 +2013,7 @@ body {
 }
 
 .catalog-filter-group {
-  margin: 0 60px 35px 0;
+  margin: 0 60px 52px 0;
   padding: 0;
 
   border: none;
@@ -2010,7 +2021,7 @@ body {
 
 .catalog-filter-title {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   padding: 12px 0 0;
 
   line-height: 20px;
@@ -2018,6 +2029,109 @@ body {
   letter-spacing: -0.02em;
 
   border-top: 2px solid #000000;
+}
+
+.range {
+  position: relative;
+}
+
+.range-scale {
+  position: relative;
+
+  height: 2px;
+  margin-bottom: 15px;
+
+  background-color: #dcdcdc;
+}
+
+.range-bar {
+  position: absolute;
+
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.range-toggle {
+  position: absolute;
+
+  width: 18px;
+  height: 18px;
+
+  background: #ebebeb;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+
+.range-toggle:hover {
+  background-color: #dcdcdc;
+}
+
+.range-toggle:focus {
+  outline: none;
+}
+
+.range-toggle:focus::before {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -9px;
+}
+
+.range-wrapper-inputs {
+  position: absolute;
+  left: -15px;
+
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+
+  font-size: 15px;
+  line-height: 18px;
+
+  opacity: 0.3;
+}
+
+.catalog-range-label {
+  display: flex;
+}
+
+.range-input {
+  width: 30px;
+  padding: 0 4px;
+
+  font: inherit;
+
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+
+  margin: 0;
 }
 
 .catalog-filter-list {
@@ -2264,6 +2378,12 @@ body {
 .pagination-load-more:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+}
+
+.pagination-load-more:disabled {
+  border-color: #e5e5e5;
+  cursor: default;
+  opacity: 0.3;
 }
 
 .pagination {
