@@ -1677,6 +1677,31 @@ body {
   font-weight: 700;
 }
 
+.delivery-name-label, .delivery-email-label {
+  position: relative;
+}
+
+.delivery-name-label::after, .delivery-email-label::after {
+  content: "";
+  position: absolute;
+  top: 57px;
+  right: 20px;
+
+  width: 15px;
+  height: 12px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.delivery-name-label::after {
+  background-image: url(../images/user-modal.svg);
+}
+
+.delivery-email-label::after {
+  background-image: url(../images/email.svg);
+}
+
 .field {
   box-sizing: border-box;
   height: 60px;
