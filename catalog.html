@@ -33,6 +33,44 @@
             <li class="navigation-user-item basket-item">
               <a class="navigation-user-link basket-link" href="#">Корзина</a>
             </li>
+            <div class="popover popover-basket popover-close"> <!--для открытия убрать класс "popover-close"-->
+              <div class="popover-content">
+                <h2 class="visually-hidden">Корзина</h2>
+                <ul class="basket-items-list">
+                  <li class="popover-basket-item">
+                    <a class="basket-item-link" href="#">
+                      <img class="basket-item-image" src="images/basket/basket-1.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                      <span class="basket-item-text">Любительская селфи-палка</span>
+                    </a>
+                    <button class="basket-item-button" type="button">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z" fill="white"/>
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="popover-basket-item">
+                    <a class="basket-item-link" href="#">
+                      <img class="basket-item-image" src="images/basket/basket-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
+                      <span class="basket-item-text">Профессиональная селфи-палка</span>
+                    </a>
+                    <button class="basket-item-button" type="button">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z" fill="white"/>
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="popover-basket-results">
+                  <p class="popover-results-text popover-goods">Товаров: 2</p>
+                  <p class="popover-results-text popover-sum">Сумма: 2000 ₽</p>
+                </div>
+                <button class="basket-open-button" type="button">
+                  Открыть корзину
+                </button>
+              </div>
+            </div>
           </ul>
         </div>
         <div class="navigation-catalog-wrapper">
@@ -260,10 +298,10 @@
               <button class="pagination-load-more" type="button">Загрузить ещЁ</button>
               <ul class="pagination">
                 <li class="pagination-item">
-                  <a class="pagination-link pagination-disabled">Назад</a>
+                  <a class="pagination-link pagination-disabled">Назад</a> <!--Класс "pagination-disabled использовать для первой страницы"-->
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-page-number pagination-current">1</a>
+                  <a class="pagination-page-number pagination-current">1</a> <!--Класс "pagination-current" использовать для текущей страницы-->
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-page-number" href="#">2</a>
@@ -278,7 +316,7 @@
                   <a class="pagination-page-number" href="#">15</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link" href="#">Вперёд</a>
+                  <a class="pagination-link" href="#">Вперёд</a><!--Класс "pagination-disabled использовать для последней страницы"-->
                 </li>
               </ul>
           </div>
