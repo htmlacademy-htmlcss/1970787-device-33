@@ -21,7 +21,7 @@
             <div class="search-input-wrapper">
               <input class="search-input" type="search" name="search-input" id="search-input" placeholder="Поиск по сайту">
             </div>
-            <button class="search-button" type="submit">Найти</button>
+            <button class="search-button" type="submit" >Найти</button>
           </form>
           <ul class="navigation-user-list">
             <li class="navigation-user-item user-item">
@@ -33,14 +33,49 @@
             <li class="navigation-user-item basket-item">
               <a class="navigation-user-link basket-link" href="#">Корзина</a>
             </li>
+            <div class="popover popover-basket popover-close"> <!--для открытия убрать класс "popover-close"-->
+              <div class="popover-content">
+                <h2 class="visually-hidden">Корзина</h2>
+                <ul class="basket-items-list">
+                  <li class="popover-basket-item">
+                    <a class="basket-item-link" href="#">
+                      <img class="basket-item-image" src="images/basket/basket-1.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                      <span class="basket-item-text">Любительская селфи-палка</span>
+                    </a>
+                    <button class="basket-item-button" type="button">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z" fill="white"/>
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="popover-basket-item">
+                    <a class="basket-item-link" href="#">
+                      <img class="basket-item-image" src="images/basket/basket-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
+                      <span class="basket-item-text">Профессиональная селфи-палка</span>
+                    </a>
+                    <button class="basket-item-button" type="button">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z" fill="white"/>
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="popover-basket-results">
+                  <p class="popover-results-text popover-goods">Товаров: 2</p>
+                  <p class="popover-results-text popover-sum">Сумма: 2000 ₽</p>
+                </div>
+                <button class="basket-open-button" type="button">
+                  Открыть корзину
+                </button>
+              </div>
+            </div>
           </ul>
         </div>
         <div class="navigation-catalog-wrapper">
           <div class="navigation-catalog">
-            <!-- Для реализации выпадающего меню через JS использовать "button", без JS используем "label" и "input" -->
-            <!-- <button class="navigation-catalog-button" type="button" name="navigation-catalog-button">Каталог товаров</button> --> <!-- Раскомментить при реализации через JS -->
-            <input class="sub-menu-checkbox" type="checkbox" name="sub-menu" id="sub-menu"> <!-- Убрать при реализации через JS -->
-            <label class="navigation-catalog-button" for="sub-menu">Каталог товаров</label> <!-- Убрать при реализации через JS -->
+            <button class="navigation-catalog-button navigation-catalog-close" type="button" name="navigation-catalog-button">Каталог товаров</button>  <!-- Для открытия меню убрать стиль "navigation-catalog-close" -->
             <ul class="navigation-catalog-list"> <!--Список скрывается/отображается по клику кнопки-->
               <div class="navigation-item-wrapper">
                 <li class="navigation-catalog-item">
@@ -264,9 +299,7 @@
           <label class="mailing-label" for="mailing-input">
             <span class="visually-hidden">E-mail</span>
           </label>
-          <div class="mailing-input-wrapper">
-            <input class="mailing-input" type="email" name="mailing-input" id="mailing-input" placeholder="Ваш e-mail">
-          </div>
+          <input class="mailing-input" type="email" name="mailing-input" id="mailing-input" placeholder="Ваш e-mail">
           <button class="mailing-button" type="submit">Подписаться</button>
         </form>
         <p class="mailing-text its-free">Это бесплатно</p>
@@ -360,6 +393,58 @@
         </section>
       </div>
     </footer>
+
+    <div class="modal-container modal-conteiner-close"> <!-- Для показа модального окна убрать класс "modal-conteiner-close" -->
+      <div class="modal modal-delivery">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group name-group">
+              <label class="delivery-name-label label" for="delivery-name">Ваше имя:</label>
+              <input class="delivery-form-field field" type="text" id="delivery-name" name="delivery-name" placeholder="Введите имя">
+              <span class="delivery-text">Добавьте имя</span>
+            </p>
+            <p class="field-group email-group">
+              <label class="delivery-email-label label" for="delivery-email">Ваш e-mail:</label>
+              <input class="delivery-form-field field" type="email" id="delivery-email" name="delivery-email" placeholder="почта">
+              <span class="delivery-text">Забавный у вас адрес</span>
+            </p>
+            <p class="field-group description-group">
+              <label class="delivery-description-label label" for="delivery-description">Что нужно привезти:</label>
+              <input class="delivery-form-field field" type="text" id="delivery-description" name="delivery-description" placeholder="В свободной форме">
+            </p>
+            <p class="field-group quantity-group">
+              <label class="delivery-quantity-label label" for="delivery-quantity">Количество:
+                <button class="quantity-info-button" type="button">i</button>
+                <span class="quantity-info-tooltip">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям к провозу багажа.</span>
+              </label>
+              <span class="delivery-quantity-wrapper">
+                <button class="delivery-quantity-button" type="button">
+                  <svg class="button-minus" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H0V9H16V7Z" fill="black"/>
+                  </svg>
+                  <span class="visually-hidden">Уменьшить</span>
+                </button>
+                <input class="delivery-number-field field" type="number" value="1" id="delivery-quantity" name="delivery-quantity" min="1">
+                <span class="invalid-border"></span>
+                <button class="delivery-quantity-button" type="button">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
+                  </svg>
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
+              </span>
+            </p>
+
+            <button class="button delivery-form-button" type="submit">Отправить</button>
+
+          </form>
+        </section>
+      </div>
+    </div>
 
   </body>
 </html>

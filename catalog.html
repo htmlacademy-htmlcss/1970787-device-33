@@ -33,14 +33,49 @@
             <li class="navigation-user-item basket-item">
               <a class="navigation-user-link basket-link" href="#">Корзина</a>
             </li>
+            <div class="popover popover-basket popover-close"> <!--для открытия убрать класс "popover-close"-->
+              <div class="popover-content">
+                <h2 class="visually-hidden">Корзина</h2>
+                <ul class="basket-items-list">
+                  <li class="popover-basket-item">
+                    <a class="basket-item-link" href="#">
+                      <img class="basket-item-image" src="images/basket/basket-1.jpg" width="39" height="43" alt="Любительская селфи-палка">
+                      <span class="basket-item-text">Любительская селфи-палка</span>
+                    </a>
+                    <button class="basket-item-button" type="button">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z" fill="white"/>
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="popover-basket-item">
+                    <a class="basket-item-link" href="#">
+                      <img class="basket-item-image" src="images/basket/basket-2.jpg" width="39" height="43" alt="Профессиональная селфи-палка">
+                      <span class="basket-item-text">Профессиональная селфи-палка</span>
+                    </a>
+                    <button class="basket-item-button" type="button">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0.909091L9.09091 0L5 4.09091L0.909091 0L0 0.909091L4.09091 5L0 9.09091L0.909091 10L5 5.90909L9.09091 10L10 9.09091L5.90909 5L10 0.909091Z" fill="white"/>
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="popover-basket-results">
+                  <p class="popover-results-text popover-goods">Товаров: 2</p>
+                  <p class="popover-results-text popover-sum">Сумма: 2000 ₽</p>
+                </div>
+                <button class="basket-open-button" type="button">
+                  Открыть корзину
+                </button>
+              </div>
+            </div>
           </ul>
         </div>
         <div class="navigation-catalog-wrapper">
           <div class="navigation-catalog">
-            <!-- Для реализации выпадающего меню через JS использовать "button", без JS используем "label" и "input" -->
-            <!-- <button class="navigation-catalog-button" type="button" name="navigation-catalog-button">Каталог товаров</button> --> <!-- Раскомментить при реализации через JS -->
-            <input class="sub-menu-checkbox" type="checkbox" name="sub-menu" id="sub-menu"> <!-- Убрать при реализации через JS -->
-            <label class="navigation-catalog-button" for="sub-menu">Каталог товаров</label> <!-- Убрать при реализации через JS -->
+            <button class="navigation-catalog-button navigation-catalog-close" type="button" name="navigation-catalog-button">Каталог товаров</button>  <!-- Для открытия меню убрать стиль "navigation-catalog-close" -->
             <ul class="navigation-catalog-list"> <!--Список скрывается/отображается по клику кнопки-->
               <div class="navigation-item-wrapper">
                 <li class="navigation-catalog-item">
@@ -108,7 +143,27 @@
 
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость</legend>
-                <!--Не размечаем, разметка этого блока в 8м лайве-->
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0px; width: 119px"> <!--Стиль для изменения длины слайдера-->
+                        <button class="range-toggle toggle-min">
+                          <span class="visually-hidden">Изменить минимальную стоимость.</span>
+                        </button>
+                        <button class="range-toggle toggle-max">
+                          <span class="visually-hidden">Изменить максимальную стоимость.</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="range-wrapper-inputs">
+                      <label class="catalog-range-label label-min" style="margin-left: 0px;"> <!--Стиль для изменения положения надписи-->
+                        от <input class="range-input" type="number" value="0" name="min-price">
+                      </label>
+                      <label class="catalog-range-label label-max" style="margin-right: 73px;"> <!--Стиль для изменения положения надписи-->
+                        до <input class="range-input" type="number" value="5000" name="max-price" style="width: 37px">
+                      </label>
+                    </div>
+                  </div>
               </fieldset>
 
               <fieldset class="catalog-filter-group">
@@ -116,32 +171,37 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="filter-control">
-                      <input class="filter-input" type="checkbox" name="black" checked>
-                      Черный
+                      <input class="visually-hidden filter-input" type="checkbox" name="black" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Черный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="filter-control">
-                      <input class="filter-input" type="checkbox" name="white" checked>
-                      Белый
+                      <input class="visually-hidden filter-input" type="checkbox" name="white" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Белый</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="filter-control">
-                      <input class="filter-input" type="checkbox" name="blue">
-                      Синий
+                      <input class="visually-hidden filter-input" type="checkbox" name="blue">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Синий</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="filter-control">
-                      <input class="filter-input" type="checkbox" name="red">
-                      Красный
+                      <input class="visually-hidden filter-input" type="checkbox" name="red">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Красный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="filter-control">
-                      <input class="filter-input" type="checkbox" name="pink">
-                      Розовый
+                      <input class="visually-hidden filter-input" type="checkbox" name="pink">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Розовый</span>
                     </label>
                   </li>
                 </ul>
@@ -152,20 +212,24 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="filter-control">
-                      <input class="filter-input" type="radio" name="bluetooth" value="yes" checked>
-                      Есть
+                      <input class="visually-hidden filter-input" type="radio" name="bluetooth" value="yes" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Есть</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="filter-control">
-                      <input class="filter-input" type="radio" name="bluetooth" value="no">
-                      Нет
+                      <input class="visually-hidden filter-input" type="radio" name="bluetooth" value="no">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Нет</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
 
-              <button class="button catalog-filter-button" type="submit">Показать</button>
+              <div class="filter-button-wrapper">
+                <button class="button catalog-filter-button" type="submit">Показать</button>
+              </div>
             </form>
           </div>
           <div class="catalog-products-wrapper">
@@ -177,7 +241,7 @@
                 <option value="expensive">Дорогие</option>
               </select>
               <div class="arrow-button-wrapper">
-                <a class="catalog-arrow-button" href="#">
+                <a class="catalog-arrow-button button-up" href="#">
                   <span class="visually-hidden">От меньшего к большему</span>
                 </a>
               </div>
@@ -234,10 +298,10 @@
               <button class="pagination-load-more" type="button">Загрузить ещЁ</button>
               <ul class="pagination">
                 <li class="pagination-item">
-                  <a class="pagination-link pagination-disabled">Назад</a>
+                  <a class="pagination-link pagination-disabled">Назад</a> <!--Класс "pagination-disabled использовать для первой страницы"-->
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-page-number pagination-current">1</a>
+                  <a class="pagination-page-number pagination-current">1</a> <!--Класс "pagination-current" использовать для текущей страницы-->
                 </li>
                 <li class="pagination-item">
                   <a class="pagination-page-number" href="#">2</a>
@@ -252,7 +316,7 @@
                   <a class="pagination-page-number" href="#">15</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="pagination-link" href="#">Вперёд</a>
+                  <a class="pagination-link" href="#">Вперёд</a><!--Класс "pagination-disabled использовать для последней страницы"-->
                 </li>
               </ul>
           </div>
