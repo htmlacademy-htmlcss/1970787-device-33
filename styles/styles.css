@@ -2584,12 +2584,6 @@ body {
   display: block;
 }
 
-.product-card-button:hover:before {
-  top: 6px;
-
-  height: 8px;
-}
-
 .product-card:hover > .product-card-button {
   display: block;
 }
